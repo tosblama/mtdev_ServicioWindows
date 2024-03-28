@@ -15,14 +15,15 @@ namespace MTDEV_0019_ServicioWindows
             {
                 EventLog.CreateEventSource("MTDEV_Service", "MTDEV_Service");
             }
-            serviceLog.Log = "Servicio MTDEV";
+            serviceLog.Source = "MTDEV_Service";
+            serviceLog.Log = "";
         }
 
         protected override void OnStart(string[] args)
         {
             serviceLog.WriteEntry("Servicio MTDEV iniciado.");
             Timer timer = new Timer(3000);
-            timer.Elapsed += new System.Timers.ElapsedEventHandler(timer_elapsed);
+            timer.Elapsed += new ElapsedEventHandler(timer_elapsed);
             timer.Start();
         }
 
