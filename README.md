@@ -1,6 +1,6 @@
 # CREACIÓN DE UN SERVICIO DE WINDOWS EN VISUAL STUDIO
 
-Se debeb seguir los siguientes pasos:
+Se deben seguir los siguientes pasos:
 
 * Crear proyecto en VisualStudio de tipo "Servicio de Windows"
 * Arrastrar el objeto eventlog al diseñador y ponerle nombre
